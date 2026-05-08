@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Cuidados de Mascotas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html">Protección Animal</a>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#cuidados">Cuidados</a>
+        <a href="index.html#galeria">Galería</a>
+        <a class="active" href="juego.html">Juego</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+
+  <div class="section-title">
+
+    <h2>
+      Juego 2D: Cuida a tu mascota
+    </h2>
+
+    <p>
+      Responda correctamente para ganar puntos.
+      Aprenda sobre el cuidado responsable
+      de animales domésticos mediante un
+      juego interactivo.
+    </p>
+
+  </div>
+
+  <!-- LAYOUT -->
+
+  <section class="game-layout">
+
+    <!-- PANEL GRÁFICO -->
+
+    <div class="game-panel">
+
+      <canvas
+        id="gameCanvas"
+        width="900"
+        height="420">
+      </canvas>
+
+    </div>
+
+    <!-- PANEL QUIZ -->
+
+    <div class="quiz-panel">
+
+      <!-- ESTADÍSTICAS -->
+
+      <div class="stats">
+
+        <div>
+          <strong>Puntos:</strong>
+          <span id="score">0</span>
+        </div>
+
+        <div>
+          <strong>Vidas:</strong>
+          <span id="lives">3</span>
+        </div>
+
+        <div>
+          <strong>Nivel:</strong>
+          <span id="level">1</span>
+        </div>
+
+      </div>
+
+      <!-- TIMER -->
+
+      <div class="timer-box">
+
+        <div
+          class="timer-bar"
+          id="timerBar">
+        </div>
+
+      </div>
+
+      <!-- PROGRESO -->
+
+      <div class="progress-box">
+
+        <div
+          class="progress-fill"
+          id="progressFill">
+        </div>
+
+      </div>
+
+      <!-- PREGUNTA -->
+
+      <h3 id="questionText">
+
+        Pregunta
+
+      </h3>
+
+      <!-- RESPUESTAS -->
+
+      <div
+        id="answers"
+        class="answers">
+      </div>
+
+      <!-- FEEDBACK -->
+
+      <p
+        id="feedback"
+        class="feedback">
+      </p>
+
+      <!-- RECOMPENSAS -->
+
+      <div
+        id="reward"
+        class="reward">
+      </div>
+
+      <!-- BOTÓN -->
+
+      <button
+        id="restartBtn"
+        class="btn primary hidden">
+
+        Reiniciar juego
+
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Juego educativo sobre cuidado responsable de mascotas</p>
+      <a href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <script src="juego.js"></script>
+</body>
+</html>
